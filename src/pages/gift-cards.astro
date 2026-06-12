@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+import { Image } from 'astro:assets';
+import dashboardCentral from '../assets/gift-cards/dashboard-central.png';
+import panelCaja from '../assets/gift-cards/panel-caja.png';
+---
+
+<Base
+  title="Gift cards NFC — Syncrotap"
+  description="Tarjetas de regalo físicas con saldo digital que tus clientes canjean con un tap. Hardware, software, dashboard y packaging incluidos."
+  ogTitle="Gift cards NFC — Syncrotap"
+  ogDescription="El regalo que vuelve a tu tienda. Tarjetas físicas con saldo digital que se canjean con un tap."
+>
+
+<!-- SUB HERO -->
+<section class="subhero">
+  <div class="wrap subhero-inner">
+    <div class="crumb"><a href="/">Inicio</a> / Gift cards NFC</div>
+    <h1>El regalo que <span class="hl">vuelve a tu tienda</span></h1>
+    <p class="lead">Tarjetas físicas con saldo digital que tus clientes canjean con un tap.</p>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="block problem">
+  <div class="wrap">
+    <div class="problem-inner">
+      <div class="bar"></div>
+      <div>
+        <h2>El problema</h2>
+        <p>Las gift cards tradicionales se pierden, se falsifican y no te dejan datos. La tuya queda en la billetera del cliente y vos ves todo lo que pasa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Cómo funciona</span>
+      <h2>Tres pasos, cero fricción</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Cargás saldo</h3>
+        <p>El negocio carga saldo a la tarjeta desde su panel.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>El cliente la usa</h3>
+        <p>La regala o la usa: tap en el lector y listo.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>Ves todo</h3>
+        <p>Saldos, canjes y movimientos en tu dashboard, en tiempo real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMOS -->
+<div class="demos-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Demos reales</span>
+        <h2>Tarjetas, packaging y dashboard</h2>
+        <p>Material de una implementación real: World Padel Center Nordelta.</p>
+      </div>
+      <div class="media-feature">
+        <video src="/assets/gift-cards/giftcard.mp4" poster="/assets/gift-cards/giftcard-poster.jpg" controls loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="grid2">
+        <figure>
+          <Image src={dashboardCentral} alt="Dashboard central de gift cards" />
+          <figcaption>Dashboard central de carga y canjes</figcaption>
+        </figure>
+        <figure>
+          <Image src={panelCaja} alt="Panel de caja" />
+          <figcaption>Panel de caja / punto de venta</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- QUE INCLUYE -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Qué incluye</span>
+      <h2>Llave en mano</h2>
+    </div>
+    <div class="incluye">
+      <div class="inc"><span class="chk">✓</span><span class="txt">Tarjetas NFC personalizadas</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Lectores</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Software de carga y canje</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Dashboard gerencial</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Packaging y diseño opcional</span></div>
+      <div class="inc soon"><span class="chk">○</span><span class="txt">Integración con Apple / Google Wallet<span class="soon-tag">Próximamente</span></span></div>
+    </div>
+  </div>
+</section>
+
+<CtaFinal
+  heading="Lanzá tu gift card en semanas, no meses"
+  sub="Contanos tu caso en una call de 30 minutos. Salís con una propuesta concreta."
+/>
+
+</Base>

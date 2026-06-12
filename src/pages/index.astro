@@ -1,0 +1,151 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+import { Image } from 'astro:assets';
+import casoWpc from '../assets/caso-wpc.png';
+import casoAreaChica from '../assets/caso-area-chica.png';
+---
+
+<Base
+  title="Syncrotap — Soluciones phygital para fan engagement"
+  description="Hardware NFC, software y experiencias llave en mano para marcas, clubes y artistas. Conectamos el mundo físico con el digital."
+  ogTitle="Syncrotap — Soluciones phygital para fan engagement"
+  ogDescription="Hardware NFC, software y experiencias llave en mano para marcas, clubes y artistas."
+>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow"><span class="dot"></span>Fidelizamos tu comunidad</span>
+    <h1>Soluciones <span class="hl">phygital</span> para fan engagement</h1>
+    <p class="sub">Conectamos el mundo físico con el digital. Hardware NFC, software y experiencias llave en mano para marcas, clubes y artistas.</p>
+    <div class="hero-cta">
+      <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/molinazavaliaj/30min'});return false;" class="btn btn-primary">Agendá una call →</a>
+      <a href="#servicios" class="btn btn-ghost">Ver soluciones</a>
+    </div>
+    <div class="hero-meta">
+      <span><strong>Hardware</strong> NFC / RFID</span>
+      <span><strong>Software</strong> + dashboard</span>
+      <span><strong>Llave en mano</strong> de punta a punta</span>
+    </div>
+  </div>
+</section>
+
+<!-- HERO VIDEO -->
+<section style="padding:0 0 24px">
+  <div class="wrap">
+    <div class="media-feature">
+      <video src="/assets/index/index-hero.mp4" poster="/assets/index/index-hero-poster.jpg" autoplay loop muted playsinline controls preload="metadata"></video>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="block" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Soluciones</span>
+      <h2>Encontrá lo que necesitás y agendá una call</h2>
+      <p>Cuatro formas de conectar tu marca con tu audiencia. Elegí la que te interesa.</p>
+    </div>
+    <div class="cards">
+      <a href="/gift-cards" class="card">
+        <span class="num">01</span>
+        <h3>Gift cards NFC</h3>
+        <p>Tarjetas de regalo físicas con saldo digital. Tus clientes las canjean en tienda con un tap. Hardware, software y packaging incluidos.</p>
+        <span class="go">Ver solución <span class="arr">→</span></span>
+      </a>
+      <a href="/socios-y-accesos" class="card">
+        <span class="num">02</span>
+        <h3>Socios y accesos</h3>
+        <p>Credenciales NFC/RFID para tu club o institución. Control de acceso, estado de cuota y perfil del socio en tiempo real, todo desde un dashboard.</p>
+        <span class="go">Ver solución <span class="arr">→</span></span>
+      </a>
+      <a href="/recitales-interactivos" class="card">
+        <span class="num">03</span>
+        <h3>Recitales interactivos</h3>
+        <p>Coproducimos shows donde el merch cobra vida: los fans tapean y desbloquean experiencias exclusivas en vivo.</p>
+        <span class="go">Ver solución <span class="arr">→</span></span>
+      </a>
+      <a href="/merch-inteligente" class="card">
+        <span class="num">04</span>
+        <h3>Merch inteligente</h3>
+        <p>Le sumamos NFC a tu merchandising para volverlo interactivo: autenticidad, puntos y beneficios que retienen al cliente y suben tu CLV.</p>
+        <span class="go">Ver solución <span class="arr">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- COMO TRABAJAMOS -->
+<div class="pillars-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Cómo trabajamos</span>
+        <h2>Entregamos la solución completa, llave en mano</h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="ico">📡</div>
+          <h3>Hardware NFC/RFID</h3>
+          <p>Tarjetas, credenciales y lectores listos para usar.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">🖥️</div>
+          <h3>Software + dashboard</h3>
+          <p>Panel de gestión con métricas en tiempo real.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">📦</div>
+          <h3>Merch & packaging</h3>
+          <p>Diseño y producción física de la experiencia.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">🎬</div>
+          <h3>Contenido</h3>
+          <p>Producción audiovisual para potenciar el lanzamiento.</p>
+        </div>
+      </div>
+      <div class="media-feature" style="margin-top:32px;margin-bottom:0">
+        <video src="/assets/index/index-como-trabajamos.mp4" poster="/assets/index/index-como-trabajamos-poster.jpg" autoplay loop muted playsinline controls preload="metadata"></video>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CASOS -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Prueba social</span>
+      <h2>Ya está funcionando</h2>
+      <p>No es una idea en una slide. Es tecnología corriendo en eventos y comercios reales.</p>
+    </div>
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Gift cards NFC</span>
+        <div class="logo-slot">
+          <Image src={casoWpc} alt="World Padel Center Nordelta" style="max-height:96px;max-width:80%;object-fit:contain" />
+        </div>
+        <div class="client">World Padel Center Nordelta</div>
+        <p class="what">Gift cards NFC con saldo digital, packaging y dashboard de canjes.</p>
+      </div>
+      <div class="case">
+        <span class="tag">Socios y accesos</span>
+        <div class="logo-slot">
+          <Image src={casoAreaChica} alt="Área Chica" style="max-height:96px;max-width:80%;object-fit:contain" />
+        </div>
+        <div class="client">Área Chica</div>
+        <p class="what">Credenciales con control de acceso y estado de cuota en tiempo real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<CtaFinal
+  heading="¿Querés implementar esto con tus clientes o tu empresa?"
+  sub="Contanos tu caso en una call de 30 minutos. Salís con una propuesta concreta."
+/>
+
+</Base>

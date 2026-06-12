@@ -1,0 +1,129 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+import { Image } from 'astro:assets';
+import userIndex from '../assets/recitales/user-index.png';
+import userVincularTag from '../assets/recitales/user-vincular-tag.png';
+import userCanjePuntos from '../assets/recitales/user-canje-puntos.png';
+import userComunidad from '../assets/recitales/user-comunidad.png';
+import adminDashboard from '../assets/recitales/admin-dashboard.png';
+import adminMerch from '../assets/recitales/admin-merch.png';
+import adminTags from '../assets/recitales/admin-tags.png';
+---
+
+<Base
+  title="Recitales interactivos — Syncrotap"
+  description="Coproducimos recitales donde los fans tapean su merch y desbloquean experiencias exclusivas en vivo. Merch NFC + app + setup técnico completo."
+  ogTitle="Recitales interactivos — Syncrotap"
+  ogDescription="El merch cobra vida en el show. Los fans tapean su merch y desbloquean experiencias en vivo."
+>
+
+<!-- SUB HERO -->
+<section class="subhero">
+  <div class="wrap subhero-inner">
+    <div class="crumb"><a href="/">Inicio</a> / Productos NFC / Recitales interactivos</div>
+    <h1>El merch <span class="hl">cobra vida</span> en el show</h1>
+    <p class="lead">Coproducimos recitales donde los fans tapean su merch y desbloquean experiencias en vivo.</p>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="block problem">
+  <div class="wrap">
+    <div class="problem-inner">
+      <div class="bar"></div>
+      <div>
+        <h2>El problema</h2>
+        <p>El merch termina en un cajón y la experiencia del show muere cuando se apagan las luces. Acá el merch es la llave del fandom.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Cómo funciona</span>
+      <h2>Tres capas, una experiencia</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Capa física</h3>
+        <p>El merch del evento lleva NFC integrado.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>Capa digital</h3>
+        <p>El fan entra a la app, tapea su merch y lo vincula a su usuario.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>La magia</h3>
+        <p>Accede a beneficios y experiencias exclusivas durante el show, en vivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMOS -->
+<div class="demos-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Demos reales</span>
+        <h2>La experiencia en acción</h2>
+        <p>El recorrido del fan: entra a la app, vincula su merch y desbloquea beneficios en vivo.</p>
+      </div>
+      <div class="media-feature vert">
+        <video src="/assets/recitales/recital.mp4" poster="/assets/recitales/recital-poster.jpg" controls loop playsinline preload="metadata"></video>
+      </div>
+      <div class="masonry">
+        <figure><Image src={userIndex} alt="App del fan" /><figcaption>App del fan</figcaption></figure>
+        <figure><Image src={userVincularTag} alt="Vincular el merch NFC" /><figcaption>Vincula su merch con un tap</figcaption></figure>
+        <figure><Image src={userCanjePuntos} alt="Canje de puntos" /><figcaption>Desbloquea beneficios</figcaption></figure>
+        <figure><Image src={userComunidad} alt="Comunidad" /><figcaption>Comunidad del fandom</figcaption></figure>
+        <figure><Image src={adminDashboard} alt="Dashboard de administración" /><figcaption>Panel de la productora / label / artista</figcaption></figure>
+        <figure><Image src={adminMerch} alt="Gestión de merch" /><figcaption>Gestión de merch</figcaption></figure>
+        <figure><Image src={adminTags} alt="Gestión de tags NFC" /><figcaption>Gestión de tags NFC</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PARA QUIEN -->
+<section class="block problem">
+  <div class="wrap">
+    <div class="problem-inner">
+      <div class="bar"></div>
+      <div>
+        <h2>Para quién</h2>
+        <p>Productoras audiovisuales y artist managers que quieran coproducir creativamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUE INCLUYE -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Qué incluye</span>
+      <h2>Llave en mano</h2>
+    </div>
+    <div class="incluye">
+      <div class="inc"><span class="chk">✓</span><span class="txt">Merch con NFC</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Hardware</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Web app o app</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Setup técnico completo — el venue con WiFi lo resolvemos juntos, es parte del servicio</span></div>
+    </div>
+  </div>
+</section>
+
+<CtaFinal
+  heading="Hagamos que tu próximo show sea inolvidable"
+  sub="Contanos tu caso en una call de 30 minutos. Salís con una propuesta concreta."
+/>
+
+</Base>

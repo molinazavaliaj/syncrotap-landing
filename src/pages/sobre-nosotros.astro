@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+---
+
+<Base
+  title="Sobre nosotros — Syncrotap"
+  description="Quiénes están detrás de Syncrotap y hacia dónde vamos: Artist OS, el sistema operativo del artista. Fan engagement, marketplace y label services con IA."
+  ogTitle="Sobre nosotros — Syncrotap"
+  ogDescription="El equipo detrás de Syncrotap y nuestra visión a largo plazo: Artist OS."
+>
+
+<!-- SUB HERO -->
+<section class="subhero">
+  <div class="wrap subhero-inner">
+    <div class="crumb"><a href="/">Inicio</a> / Sobre nosotros</div>
+    <h1>Sabemos por lo que <span class="hl">estás pasando</span></h1>
+  </div>
+  <div class="wrap" style="position:relative;margin-top:36px">
+    <div class="media-feature">
+      <video src="/assets/sobre-nosotros/sobre-nosotros-hero.mp4" poster="/assets/sobre-nosotros/sobre-nosotros-hero-poster.jpg" autoplay loop muted playsinline controls preload="metadata"></video>
+    </div>
+  </div>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">El equipo</span>
+      <h2>Quiénes estamos detrás</h2>
+    </div>
+    <div class="team">
+      <div class="member">
+        <div class="ava">JM</div>
+        <h3>Joaquin Molina Zavalia</h3>
+        <div class="role">CEO &amp; FOUNDER</div>
+        <ul class="bio">
+          <li>Lic. en Global Business Management especializado en Marketing</li>
+          <li>Productor ejecutivo</li>
+          <li>Fan engagement specialist</li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/joaquin-molina-zavalia/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="member">
+        <div class="ava">T</div>
+        <h3>Theo</h3>
+        <div class="role">CTO &amp; FOUNDING EMPLOYEE</div>
+        <ul class="bio">
+          <li>Ingeniero informático</li>
+          <li>Full-stack: React / Next.js</li>
+          <li>Arquitecto del ecosistema técnico</li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/theo-miguel/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:28px">
+      <a href="https://www.instagram.com/syncrotap" target="_blank" rel="noopener" class="btn btn-ghost">Seguinos en Instagram → @syncrotap</a>
+    </div>
+  </div>
+</section>
+
+<!-- ARTIST OS -->
+<div class="pillars-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow"><span class="dot"></span>La visión · en desarrollo</span>
+        <h2>Artist OS</h2>
+        <p>Todo lo que el artista necesita, en una sola app. El sistema operativo del artista: fans, ingresos y carrera en un solo lugar. Es hacia donde vamos — y financiamos el camino con las soluciones que ofrecemos hoy.</p>
+      </div>
+      <div class="os-blocks">
+        <div class="os">
+          <span class="n">01</span>
+          <h3>Fan engagement</h3>
+          <p>Interacción directa con el fandom. La relación artista–fan, sin intermediarios.</p>
+        </div>
+        <div class="os">
+          <span class="n">02</span>
+          <h3>Marketplace</h3>
+          <p>Entradas, experiencias, canciones exclusivas y merch NFC, directo al fan.</p>
+        </div>
+        <div class="os">
+          <span class="n">03</span>
+          <h3>Regalías tokenizadas</h3>
+          <p>Los fans invierten en las canciones y participan de las regalías, en blockchain.</p>
+        </div>
+        <div class="os">
+          <span class="n">04</span>
+          <h3>AI label services</h3>
+          <p>Distribución, booking, contenido y registro de derechos, potenciado con IA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<CtaFinal
+  heading="¿Sos artista, manager o inversor? Hablemos"
+  sub="Contanos tu caso en una call de 30 minutos. Te mostramos hacia dónde vamos."
+/>
+
+</Base>

@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+import { Image } from 'astro:assets';
+import escaneoProducto from '../assets/merch/escaneo-producto.png';
+import dashboardAdmin from '../assets/merch/dashboard-admin.png';
+import canjePuntos from '../assets/merch/canje-puntos.png';
+import perfilUsuario from '../assets/merch/perfil-usuario.png';
+import dashboardMarca from '../assets/merch/dashboard.png';
+---
+
+<Base
+  title="Merch inteligente — Syncrotap"
+  description="Le sumamos NFC a tu merchandising para volverlo interactivo: autenticidad, programa de puntos y beneficios que retienen al cliente y aumentan tu CLV."
+  ogTitle="Merch inteligente — Syncrotap"
+  ogDescription="Cada producto que vendés se convierte en un canal directo con tu cliente. Autenticidad, puntos y comunidad con NFC."
+>
+
+<!-- SUB HERO -->
+<section class="subhero">
+  <div class="wrap subhero-inner">
+    <div class="crumb"><a href="/">Inicio</a> / Productos NFC / Merch inteligente</div>
+    <h1>Tu merch deja de ser un producto.<br /><span class="hl">Pasa a ser un canal.</span></h1>
+    <p class="lead">Le integramos NFC a tu merchandising para volverlo interactivo: cada producto vendido conecta al cliente con tu marca, le da beneficios y lo hace volver.</p>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="block problem">
+  <div class="wrap">
+    <div class="problem-inner">
+      <div class="bar"></div>
+      <div>
+        <h2>El problema</h2>
+        <p>Vendés un producto y la relación con el cliente termina ahí. No sabés quién lo compró, no podés premiarlo por seguir eligiéndote, y tu marca queda expuesta a la falsificación. Cada venta debería ser el comienzo de la relación, no el final.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Cómo funciona</span>
+      <h2>Una capa digital adentro de cada producto</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Integramos el chip</h3>
+        <p>Le sumamos un chip NFC a tu producto: una identidad digital única e imposible de falsificar.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>El cliente tapea</h3>
+        <p>Con el celular accede a tu comunidad, verifica que el producto es original y activa sus beneficios.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>Vuelve y suma</h3>
+        <p>Acumula puntos cada vez que usa tu marca y desbloquea recompensas. Más fidelidad, más recompra.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<div class="pillars-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Qué gana tu marca</span>
+        <h2>De comprador esporádico a embajador permanente</h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="ico">📈</div>
+          <h3>Más CLV</h3>
+          <p>El cliente vuelve a comprar para seguir sumando puntos y beneficios.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">🛡️</div>
+          <h3>Blindaje de marca</h3>
+          <p>Cada producto verifica su autenticidad. Adiós a las falsificaciones.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">👥</div>
+          <h3>Comunidad activa</h3>
+          <p>Una base de fans recompensados que recomiendan tu marca.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">📊</div>
+          <h3>Datos propios</h3>
+          <p>Sabés quién usa tu producto y qué le interesa, para vender mejor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CASO SIUX -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Caso real · SIUX</span>
+      <h2>La pala inteligente</h2>
+      <p>Con SIUX (marca líder de pádel) integramos un chip NFC en sus palas. Cada jugador entra a la "Nación SIUX", verifica que su pala es original y suma puntos por jugar, comprar e interactuar en redes — desbloqueando clínicas, acceso VIP a torneos y contenido exclusivo.</p>
+    </div>
+    <div class="media-feature square">
+      <video src="/assets/merch/nfctap.mp4" poster="/assets/merch/nfctap-poster.jpg" controls autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="masonry">
+      <figure><Image src={escaneoProducto} alt="Escaneo del producto" /><figcaption>El jugador escanea su pala</figcaption></figure>
+      <figure><Image src={dashboardAdmin} alt="Panel de administración" /><figcaption>Panel de administración</figcaption></figure>
+      <figure><Image src={canjePuntos} alt="Canje de puntos" /><figcaption>Canje de puntos por beneficios</figcaption></figure>
+      <figure><Image src={perfilUsuario} alt="Perfil del jugador en panel admin" /><figcaption>Perfil de jugador en panel admin</figcaption></figure>
+      <figure><Image src={dashboardMarca} alt="Dashboard de la marca" /><figcaption>Dashboard de la marca</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- QUE INCLUYE -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Qué incluye</span>
+      <h2>Llave en mano</h2>
+    </div>
+    <div class="incluye">
+      <div class="inc"><span class="chk">✓</span><span class="txt">Chips NFC integrados a tu producto</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Plataforma web/app de comunidad</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Programa de puntos y beneficios</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Verificación de autenticidad</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Dashboard con datos de tus clientes</span></div>
+      <div class="inc soon"><span class="chk">○</span><span class="txt">Coach Assist con IA (video y análisis)<span class="soon-tag">Próximamente</span></span></div>
+    </div>
+  </div>
+</section>
+
+<CtaFinal
+  heading="Convertí cada producto en un activo de fidelización"
+  sub="Contanos tu caso en una call de 30 minutos. Salís con una propuesta concreta."
+/>
+
+</Base>
