@@ -1,0 +1,232 @@
+---
+import Base from '../layouts/Base.astro';
+import CtaFinal from '../components/CtaFinal.astro';
+import { Image } from 'astro:assets';
+import qrPase from '../assets/invitados-y-eventos/qr-pase.png';
+import recepcionScanner from '../assets/invitados-y-eventos/recepcion-scanner.png';
+import vendedoraPlanPago from '../assets/invitados-y-eventos/vendedora-plan-pago.png';
+import duenoCaja from '../assets/invitados-y-eventos/dueno-caja.png';
+import cobrosDesglose from '../assets/invitados-y-eventos/cobros-desglose.png';
+import organizadorInvitados from '../assets/invitados-y-eventos/organizador-invitados.png';
+import menorFormulario from '../assets/invitados-y-eventos/menor-formulario.png';
+import menorEgreso from '../assets/invitados-y-eventos/menor-egreso.png';
+---
+
+<Base
+  title="Invitados y eventos — Syncrotap"
+  description="Sistema de gestión de eventos: acceso por QR o pulsera NFC, control de menores, cobros y catering. Llave en mano para salones de eventos."
+  ogTitle="Invitados y eventos — Syncrotap"
+  ogDescription="Cada invitado, su pase. Gestioná accesos, cobros y consumo de tu evento con QR y pulseras NFC."
+>
+
+<!-- SUB HERO -->
+<section class="subhero">
+  <div class="wrap subhero-inner">
+    <div class="crumb"><a href="/">Inicio</a> / Soluciones NFC / Invitados y eventos</div>
+    <h1>Cada invitado, <span class="hl">su pase</span></h1>
+    <p class="lead">Gestioná los invitados, el acceso y los cobros de tu evento desde un solo lugar. Entrada por QR personalizado o pulsera NFC que además funciona como consumo en la barra.</p>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="block problem">
+  <div class="wrap">
+    <div class="problem-inner">
+      <div class="bar"></div>
+      <div>
+        <h2>El problema</h2>
+        <p>Listas en Excel, nadie sabe con certeza quién entró ni quién salió — y menos con menores de edad. Los cobros se llevan a mano y el catering se resuelve a las llamadas. Un evento se organiza con planillas sueltas y mensajes de WhatsApp por todos lados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Cómo funciona</span>
+      <h2>De la invitación a la puerta</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Armás el evento</h3>
+        <p>Cargás fecha, capacidad y precio. El sistema genera el plan de pagos automático: reserva + cuotas mensuales.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>El organizador invita</h3>
+        <p>La familia carga su lista y manda el link por WhatsApp. Cada invitado se registra en 2 minutos y recibe su QR por mail.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>Escaneás en la puerta</h3>
+        <p>La noche del evento, recepción escanea cada QR. Ingreso y egreso quedan registrados con hora exacta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CINCO VISTAS -->
+<div class="pillars-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Un sistema, cinco vistas</span>
+        <h2>Cada actor ve exactamente lo que necesita</h2>
+      </div>
+      <div class="roles">
+        <div class="pillar">
+          <div class="ico">👑</div>
+          <h3>Dueño del salón</h3>
+          <p>Caja global: facturado, cobrado y lo que entra este mes, en tiempo real.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">💼</div>
+          <h3>Vendedora</h3>
+          <p>Crea eventos, arma el plan de pagos y registra cada cobro.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">📱</div>
+          <h3>Organizador</h3>
+          <p>Carga invitados y manda los links por WhatsApp. Sin usuario ni contraseña.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">🎟️</div>
+          <h3>Invitado</h3>
+          <p>Se registra en 2 minutos desde el celular y recibe su QR por mail.</p>
+        </div>
+        <div class="pillar">
+          <div class="ico">📷</div>
+          <h3>Recepción</h3>
+          <p>Escanea los QR en la puerta y controla ingresos y egresos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CUIDADO DE MENORES -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Cuidado de menores</span>
+      <h2>Pensado para fiestas de 15</h2>
+      <p>Saber quién entra no alcanza. El sistema registra el adulto responsable de cada menor y quién está autorizado a retirarlo. En la puerta, recepción verifica antes de dejar salir. Ningún sistema de tickets hace esto.</p>
+    </div>
+    <div class="grid2">
+      <figure>
+        <Image src={menorFormulario} alt="Formulario de invitado menor con datos del tutor" />
+        <figcaption>Al registrarse, el menor carga los datos de su adulto responsable</figcaption>
+      </figure>
+      <figure>
+        <Image src={menorEgreso} alt="Control de egreso de un menor en recepción" />
+        <figcaption>En el egreso, recepción verifica con quién se retira</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- COBROS Y PROYECCION -->
+<div class="demos-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Cobros y proyección</span>
+        <h2>Sabés cuánto entra este mes</h2>
+        <p>El sistema arma el cronograma de cuotas de cada evento y te muestra la proyección de cobro mes a mes. Las cuotas vencidas aparecen en rojo. El dueño sabe, sin llamar a nadie, cuánto facturó, cuánto cobró y cuánto falta.</p>
+      </div>
+      <div class="grid2">
+        <figure>
+          <Image src={duenoCaja} alt="Caja global del salón con facturado, cobrado y por cobrar" />
+          <figcaption>Caja global del salón</figcaption>
+        </figure>
+        <figure>
+          <Image src={cobrosDesglose} alt="Desglose de cuotas por mes" />
+          <figcaption>Desglose de cuotas mes a mes</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PULSERA NFC + CONSUMO -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Modalidad premium</span>
+      <h2>La pulsera que entra y paga en la barra</h2>
+      <p>Además del QR, ofrecemos pulseras NFC personalizadas por invitado. El organizador precarga puntos de consumo a cada uno al armar la lista — y lo ve sumado a su factura en tiempo real. La noche del evento, el invitado tapea la pulsera en la barra y consume: cero efectivo, cero tickets, cero colas.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="ico">💳</div>
+        <h3>Precarga por invitado</h3>
+        <p>El organizador asigna puntos de consumo a cada pulsera antes del evento.</p>
+      </div>
+      <div class="pillar">
+        <div class="ico">📲</div>
+        <h3>Tap en la barra</h3>
+        <p>El invitado tapea y consume al instante. Sin efectivo ni tickets.</p>
+      </div>
+      <div class="pillar">
+        <div class="ico">🧾</div>
+        <h3>Todo a la factura</h3>
+        <p>El consumo se suma a la cuenta del organizador, que la ve en tiempo real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMOS -->
+<div class="demos-wrap">
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-tag">Demos reales</span>
+        <h2>El sistema en acción</h2>
+        <p>Material de una implementación real en un salón de eventos.</p>
+      </div>
+      <div class="masonry">
+        <figure><Image src={vendedoraPlanPago} alt="Plan de pago de un evento" /><figcaption>Plan de pago y cobros del evento</figcaption></figure>
+        <figure><Image src={organizadorInvitados} alt="Panel del organizador cargando invitados" /><figcaption>El organizador carga y sigue a sus invitados</figcaption></figure>
+        <figure><Image src={recepcionScanner} alt="Recepción escaneando un QR en la puerta" /><figcaption>Recepción escanea el QR en la puerta</figcaption></figure>
+        <figure><Image src={qrPase} alt="Pase de acceso con QR del invitado" /><figcaption>El pase QR que recibe cada invitado</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- QUE INCLUYE -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Qué incluye</span>
+      <h2>Llave en mano</h2>
+    </div>
+    <div class="incluye">
+      <div class="inc"><span class="chk">✓</span><span class="txt">Software multi-rol (dueño, vendedora, organizador, invitado, recepción)</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Acceso por QR personalizado</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Pulseras NFC personalizadas</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Consumo prepago en barra</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Panel de cobros y proyección de cuotas</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Control de menores: adulto responsable y autorización de retiro</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Consolidado de catering exportable en PDF/CSV</span></div>
+      <div class="inc"><span class="chk">✓</span><span class="txt">Corre en la web, sin instalar nada</span></div>
+    </div>
+  </div>
+</section>
+
+<CtaFinal
+  heading="Organizá tu próximo evento sin planillas"
+  sub="Contanos tu caso en una call de 30 minutos. Salís con una propuesta concreta."
+/>
+
+</Base>
+
+<style>
+  .roles{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+  @media(max-width:980px){.roles{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.roles{grid-template-columns:1fr}}
+</style>

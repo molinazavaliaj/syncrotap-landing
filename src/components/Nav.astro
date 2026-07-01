@@ -1,7 +1,7 @@
 ---
 const pathname = Astro.url.pathname;
 
-const isNFCSoluciones = pathname.startsWith('/gift-cards') || pathname.startsWith('/socios-y-accesos');
+const isNFCSoluciones = pathname.startsWith('/gift-cards') || pathname.startsWith('/socios-y-accesos') || pathname.startsWith('/invitados-y-eventos');
 const isNFCProductos = pathname.startsWith('/merch-inteligente') || pathname.startsWith('/recitales-interactivos');
 const isSobreNosotros = pathname.startsWith('/sobre-nosotros');
 ---
@@ -16,6 +16,7 @@ const isSobreNosotros = pathname.startsWith('/sobre-nosotros');
         <div class="submenu">
           <a href="/gift-cards">Gift cards<span class="s-desc">Tarjetas de regalo con saldo digital</span></a>
           <a href="/socios-y-accesos">Socios y accesos<span class="s-desc">Credenciales NFC/RFID para clubes</span></a>
+          <a href="/invitados-y-eventos">Invitados y eventos<span class="s-desc">Entradas QR y pulseras NFC para eventos</span></a>
         </div>
       </div>
       <div class={`nav-item has-sub${isNFCProductos ? ' active' : ''}`}>
