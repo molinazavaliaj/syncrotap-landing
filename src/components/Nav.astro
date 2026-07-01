@@ -29,7 +29,7 @@ const isSobreNosotros = pathname.startsWith('/sobre-nosotros');
       <div class={`nav-item${isSobreNosotros ? ' active' : ''}`}>
         <a href="/sobre-nosotros">Sobre nosotros</a>
       </div>
-      <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/molinazavaliaj/30min'});return false;" class="btn btn-primary">Agendá una call</a>
+      <button type="button" data-cal-namespace="30min" data-cal-link="joaquin-syncrotap/30min" data-cal-config='{"layout":"month_view"}' class="btn btn-primary">Agendá una call</button>
     </nav>
   </div>
 </header>

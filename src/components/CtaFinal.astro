@@ -12,7 +12,7 @@ const { heading, sub, btnText = 'Agendá una call →' } = Astro.props;
     <div class="cta-box">
       <h2>{heading}</h2>
       <p>{sub}</p>
-      <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/molinazavaliaj/30min'});return false;" class="btn btn-primary">{btnText}</a>
+      <button type="button" data-cal-namespace="30min" data-cal-link="joaquin-syncrotap/30min" data-cal-config='{"layout":"month_view"}' class="btn btn-primary">{btnText}</button>
     </div>
   </div>
 </section>
